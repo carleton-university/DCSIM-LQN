@@ -1,0 +1,33 @@
+G
+""
+1.0E-6
+50
+1
+0.9
+-1
+
+P 0
+
+p dataP s m 1
+p appP s m 1
+p refP f m 1
+p webP s m 1
+-1
+
+T 0
+t tdata n edata -1 dataP i
+t tapp n eapp -1 appP i
+t tweb n eweb -1 webP i
+t refTask r refEntry -1 refP m 1
+-1
+
+E 0
+s refEntry 1E-06 -1
+Z refEntry 10000.0 -1
+y refEntry eweb 1.0 -1
+s eweb 10 -1
+y eweb eapp 1 -1
+s eapp 1000 -1
+y eapp edata 1 -1
+s edata 100 -1
+-1
